@@ -1,20 +1,12 @@
 @import '../../styles/settings.scss';
 
-
-.columnForm {
+.cardForm {
     padding: 10px;
     min-width: 200px;
     background: $color-light;
     border: 1px solid lighten($color-dark, 60%);
-    margin: 10px 50px 10px 0px;
-    text-align: center;
+    margin: 0 0 $base-size 0;
     font-family: $font-text;
     border-radius: $radius;
-}
-
-
-.span{
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
