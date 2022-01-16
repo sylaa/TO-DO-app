@@ -2,7 +2,7 @@ import Card from '../Card/Card.js';
 import styles from './Column.module.scss';
 import CardForm from '../CardForm/CardForm.js';
 
-const Column = (props) => {
+const Column = props => {
   return (
     <section className={styles.column}>
       <h2 className={styles.title}>
