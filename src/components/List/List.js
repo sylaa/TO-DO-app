@@ -5,38 +5,7 @@ import { useSelector } from 'react-redux';
 
 const List = () => {
   const columns = useSelector((state) => state.columns);
-  // {
-  //     id: 1,
-  //     title: 'Books',
-  //     icon: 'book',
-  //     cards: [
-  //       { id: 1, title: 'This is Going to Hurt' },
-  //       { id: 2, title: 'Interpreter of Maladies' },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Movies',
-  //     icon: 'film',
-  //     cards: [
-  //       { id: 1, title: 'Harry Potter' },
-  //       { id: 2, title: 'Star Wars' },
-  //     ],
-  //   },
-  //   {
-  //     id: 3,
-  //     title: 'Games',
-  //     icon: 'gamepad',
-  //     cards: [
-  //       { id: 1, title: 'The Witcher' },
-  //       { id: 2, title: 'Skyrim' },
-  //     ],
-  //   },
-  // ]);
-
-  // setColumns(columnsUpdated);
-
-  // };
+  
 
   return (
     <div className={styles.list}>
@@ -45,7 +14,7 @@ const List = () => {
       </header>
       <p className={styles.description}>Interesting things I want to check out</p>
       <section className={styles.columns}>
-        {columns.map(column =>
+        {columns.map((column) =>
           <Column
             key={column.id}
             {...column}  />
