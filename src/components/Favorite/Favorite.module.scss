@@ -1,0 +1,9 @@
+@import '../../styles/settings.scss';
+.container {
+  display: flex;
+  text-align: center;
+  background-color: $color-dark;
+  font-size: 24px;
+  font: $font-text;
+  color: $color-light;
+}
