@@ -25,6 +25,12 @@
         & a span {
             display: none;
         }
+        & a.linkActive {
+          transition: 0.4s;
+          color: $color-warning;
+        }
   }
+
 }
+
 
