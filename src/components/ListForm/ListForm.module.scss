@@ -1,23 +1,24 @@
 @import '../../styles/settings.scss';
 
-.columnForm {
+.listForm {
   padding: 10px;
   min-width: 200px;
   background: $color-dark;
   margin: 10px 50px 10px 0px;
   text-align: center;
   font-family: $font-text;
+  border-radius: $radius;
 }
 
-.columnFormInput {
-    border: 1px solid lighten($color-dark, 60%);
-    background: $color-light;
-    min-height: 40px;
-    min-width: 200px;
-    margin: 10px 10px 10px 0px;
-    font-family: $font-text;
-    border-radius: $radius;
-  }
+.formListInput {
+  border: 1px solid lighten($color-dark, 60%);
+  background: $color-light;
+  min-height: 40px;
+  min-width: 200px;
+  margin: 10px 10px 10px 0px;
+  font-family: $font-text;
+  border-radius: $radius;
+}
 
 .span {
   text-align: center;

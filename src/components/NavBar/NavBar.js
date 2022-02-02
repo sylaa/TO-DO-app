@@ -14,7 +14,7 @@ const NavBar = () => {
       <ul>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && styles.linkActive}
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
             to='/'
           >
             Home
@@ -22,7 +22,7 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && styles.linkActive}
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
             to='/favorite'
           >
             Favorite
@@ -30,7 +30,7 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink
-            className={({ isActive }) => isActive && styles.linkActive}
+            className={({ isActive }) => isActive ? styles.linkActive : ''}
             to='/about'
           >
             About

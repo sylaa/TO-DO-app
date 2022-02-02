@@ -4,7 +4,7 @@ import Button from '../Button/Button.js';
 import { useDispatch } from 'react-redux';
 import { addColumn } from '../../redux/store';
 
-const ColumnForm = (props) => {
+const ColumnForm = props => {
   const [title, setTitle] = useState('');
   const [icon, setIcon] = useState('');
   
@@ -12,7 +12,7 @@ const ColumnForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addColumn({ title, icon }));
+    dispatch(addColumn({ title, icon, listId: props.listId }));
     setTitle('');
     setIcon('');
   };
@@ -22,17 +22,17 @@ const ColumnForm = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.columnForm}>
       <span className={styles.span}>Title:</span>{' '}
       <input
-        className={styles.columnForm}
+        className={styles.columnFormInput}
         type='text'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <span className={styles.span}>Icon:</span>{' '}
       <input
-        className={styles.columnForm}
+        className={styles.columnFormInput}
         type='text'
         value={icon}
         onChange={(e) => setIcon(e.target.value)}
